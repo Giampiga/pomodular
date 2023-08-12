@@ -25,7 +25,6 @@ function App() {
   // When the timer reaches 0, play a sound
   useLayoutEffect(() => {
     if (secondsLeft === 0) {
-      console.log('done')
       bells.play()
       clearInterval(timer);
     }
